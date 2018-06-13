@@ -52,6 +52,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
+          $("form").submit(function(e){
+            e.preventDefault();
+        });
           $('#submitSearch').on('click', function() {
               var img = $('<img />', {src    : 'https://i.imgur.com/9N5CpH9.jpg',
                                       'class': 'img-fluid'
